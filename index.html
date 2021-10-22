@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel='stylesheet' href='https://assets.codepen.io/2621168/atropos.min.css'>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>CoffeShop</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">CoffeShop</a>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Products</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== Home =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__img">
+                    <img src="assets/img/img1.png" alt="" data-speed="-2" class="move">
+                    <img src="assets/img/img2.png" alt="" data-speed="2" class="move">
+                    <img src="assets/img/img3.png" alt="" data-speed="2" class="move">
+                    <img src="assets/img/img4.png" alt="" data-speed="-2" class="move">
+                    <img src="assets/img/img5.png" alt="" data-speed="-2" class="move">
+                    <img src="assets/img/img6.png" alt="" data-speed="2" class="move">
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">Good coffee<br>Good moods</h1>
+                    <p class="home__description">Have a fresh coffee in the morning</p>
+                    <a href="#" class="home__button">See more</a>
+                </div>
+            </div>
+        </section>
+        <!--===== About =====-->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="img/about.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <h2>Our History</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis alias pariatur assumenda illo animi nostrum dolorum provident autem exercitationem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis alias pariatur assumenda illo animi nostrum dolorum provident autem exercitationem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tempore odit officia labore cumque?
+                </p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+
+        </section>
+
+        <section class="product">
+            <div class="atropos my-atropos">
+                <!-- scale container (required) -->
+                <div class="atropos-scale">
+                    <!-- rotate container (required) -->
+                    <div class="atropos-rotate">
+                        <!-- inner container (required) -->
+                        <div class="atropos-inner">
+                            <div class="container">
+                                <h1>Feel the cup<br>of Emotions</h1>
+                                <p>Let's help discover the best coffee drink of the week.</p>
+                                <footer>
+                                    <div class="cta">
+                                        <a href="#" class="share">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.25 9C2.25 10.2405 3.2595 11.25 4.5 11.25C5.0955 11.25 5.634 11.0138 6.03675 10.635L10.53 13.203C10.5165 13.3005 10.5 13.398 10.5 13.5C10.5 14.7405 11.5095 15.75 12.75 15.75C13.9905 15.75 15 14.7405 15 13.5C15 12.2595 13.9905 11.25 12.75 11.25C12.1545 11.25 11.616 11.4862 11.2133 11.865L6.72 9.29775C6.7335 9.1995 6.75 9.102 6.75 9C6.75 8.898 6.7335 8.8005 6.72 8.70225L11.2133 6.135C11.616 6.51375 12.1545 6.75 12.75 6.75C13.9905 6.75 15 5.7405 15 4.5C15 3.2595 13.9905 2.25 12.75 2.25C11.5095 2.25 10.5 3.2595 10.5 4.5C10.5 4.602 10.5165 4.6995 10.53 4.79775L6.03675 7.365C5.622 6.97101 5.07205 6.75092 4.5 6.75C3.2595 6.75 2.25 7.7595 2.25 9Z" fill="#2B3F56"/>
+                                    </svg> Share
+                                        </a>
+                                    </div>
+                                    <p class="date">October 19, 2021</p>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== Products =====-->
+        <section class="products" id="products">
+            <div class="heading">
+                <h2>Our popular products</h2>
+            </div>
+            <!-- Container -->
+            <div class="products-container">
+                <div class="box">
+                    <img src="img/p1.png" alt="">
+                    <h3>Americano Pure</h3>
+                    <div class="content">
+                        <span>$25</span>
+                        <a href="#">Add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/p2.png" alt="">
+                    <h3>Americano Pure</h3>
+                    <div class="content">
+                        <span>$25</span>
+                        <a href="#">Add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/p3.png" alt="">
+                    <h3>Americano Pure</h3>
+                    <div class="content">
+                        <span>$25</span>
+                        <a href="#">Add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/p4.png" alt="">
+                    <h3>Americano Pure</h3>
+                    <div class="content">
+                        <span>$25</span>
+                        <a href="#">Add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/p5.png" alt="">
+                    <h3>Americano Pure</h3>
+                    <div class="content">
+                        <span>$25</span>
+                        <a href="#">Add to cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="img/p6.png" alt="">
+                    <h3>Americano Pure</h3>
+                    <div class="content">
+                        <span>$25</span>
+                        <a href="#">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--===== Customers =====-->
+        <section class="customers" id="customers">
+            <div class="heading">
+                <h2>Our customer's</h2>
+            </div>
+            <!-- Container -->
+            <div class="customers-container">
+                <div class="box">
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad accusantium voluptate officia totam obcaecati ducimus?</p>
+                    <h2>Yasin Arafat</h2>
+                    <img src="img/rev1.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad accusantium voluptate officia totam obcaecati ducimus?</p>
+                    <h2>Yasin Arafat</h2>
+                    <img src="img/rev2.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad accusantium voluptate officia totam obcaecati ducimus?</p>
+                    <h2>Yasin Arafat</h2>
+                    <img src="img/rev3.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!--===== Footer =====-->
+        <section class="footer">
+            <div class="footer-box">
+                <h2>Coffee Shop</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, facere.</p>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-tiktok'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Support</h3>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Product</a></li>
+            </div>
+            <div class="footer-box">
+                <h3>View Guides</h3>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog Posts</a></li>
+                <li><a href="#">Our Branches</a></li>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <div class="contact">
+                    <span><i class='bx bxs-map'></i>250 New York City, USA 1001</span>
+                    <span><i class='bx bxs-phone'></i>+1 444 744 8444</span>
+                    <span><i class='bx bxs-envelope'></i>coffee@shop.com</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() >
+                    $nav.height());
+            });
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src='https://assets.codepen.io/2621168/atropos.min.js'></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
