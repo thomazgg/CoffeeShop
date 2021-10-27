@@ -4,40 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- =====BOX ICONS===== -->
+    <!-- ===== BOX ICONS ===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel='stylesheet' href='https://assets.codepen.io/2621168/atropos.min.css'>
-    <link rel="stylesheet" href="./style.css">
+    <!-- ======= ICONS ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- ===== SWIPER CSS ==== -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <!-- ======== CSS ======== -->
+    <link rel="stylesheet" href="assets/styles/style.css">
 
     <title>CoffeShop</title>
 </head>
 
 <body>
     <!--===== HEADER =====-->
-    <header class="l-header">
+    <header class="header" id="header">
         <nav class="nav bd-grid">
             <div>
                 <a href="#" class="nav__logo">CoffeShop</a>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
             </div>
 
             <div class="nav__menu" id="nav-menu">
                 <div class="nav__close" id="nav-close">
                     <i class='bx bx-x'></i>
                 </div>
-
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Products</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#menu" class="nav__link">Menu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Produtos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contato</a>
+                    </li>
                 </ul>
+            </div>
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            </div>
+
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="Buscar produto...">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+
+            <div class="cart-items-container">
+                <div class="cart-item">
+                    <span class="fas fa-times"></span>
+                    <img src="images/cart-item-1.png" alt="">
+                    <div class="content">
+                        <h3>cart item 01</h3>
+                        <div class="price">$15.99/-</div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <span class="fas fa-times"></span>
+                    <img src="images/cart-item-2.png" alt="">
+                    <div class="content">
+                        <h3>cart item 02</h3>
+                        <div class="price">$15.99/-</div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <span class="fas fa-times"></span>
+                    <img src="images/cart-item-3.png" alt="">
+                    <div class="content">
+                        <h3>cart item 03</h3>
+                        <div class="price">$15.99/-</div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <span class="fas fa-times"></span>
+                    <img src="images/cart-item-4.png" alt="">
+                    <div class="content">
+                        <h3>cart item 04</h3>
+                        <div class="price">$15.99/-</div>
+                    </div>
+                </div>
+                <a href="#" class="btn">checkout now</a>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
             </div>
         </nav>
     </header>
@@ -56,194 +111,299 @@
                 </div>
 
                 <div class="home__data">
-                    <h1 class="home__title">Good coffee<br>Good moods</h1>
-                    <p class="home__description">Have a fresh coffee in the morning</p>
-                    <a href="#" class="home__button">See more</a>
+                    <h1 class="home__title">Café bom<br>Humor bom<br>Dia bom</h1>
+                    <p class="home__description">Tenha um café fresco de manhã</p>
+                    <a href="#about" class="home__button">Ver mais</a>
                 </div>
             </div>
         </section>
         <!--===== About =====-->
         <section class="about" id="about">
-            <div class="about-img">
-                <img src="img/about.jpg" alt="">
-            </div>
-            <div class="about-text">
-                <h2>Our History</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis alias pariatur assumenda illo animi nostrum dolorum provident autem exercitationem.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis alias pariatur assumenda illo animi nostrum dolorum provident autem exercitationem.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora tempore odit officia labore cumque?
-                </p>
-                <a href="#" class="btn">Learn More</a>
-            </div>
+            <div class="about__container bd-grid">
 
-        </section>
+                <h1 class="heading"> <span>sobre</span> nós</h1>
 
-        <section class="product">
-            <div class="atropos my-atropos">
-                <!-- scale container (required) -->
-                <div class="atropos-scale">
-                    <!-- rotate container (required) -->
-                    <div class="atropos-rotate">
-                        <!-- inner container (required) -->
-                        <div class="atropos-inner">
-                            <div class="container">
-                                <h1>Feel the cup<br>of Emotions</h1>
-                                <p>Let's help discover the best coffee drink of the week.</p>
-                                <footer>
-                                    <div class="cta">
-                                        <a href="#" class="share">
-                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M2.25 9C2.25 10.2405 3.2595 11.25 4.5 11.25C5.0955 11.25 5.634 11.0138 6.03675 10.635L10.53 13.203C10.5165 13.3005 10.5 13.398 10.5 13.5C10.5 14.7405 11.5095 15.75 12.75 15.75C13.9905 15.75 15 14.7405 15 13.5C15 12.2595 13.9905 11.25 12.75 11.25C12.1545 11.25 11.616 11.4862 11.2133 11.865L6.72 9.29775C6.7335 9.1995 6.75 9.102 6.75 9C6.75 8.898 6.7335 8.8005 6.72 8.70225L11.2133 6.135C11.616 6.51375 12.1545 6.75 12.75 6.75C13.9905 6.75 15 5.7405 15 4.5C15 3.2595 13.9905 2.25 12.75 2.25C11.5095 2.25 10.5 3.2595 10.5 4.5C10.5 4.602 10.5165 4.6995 10.53 4.79775L6.03675 7.365C5.622 6.97101 5.07205 6.75092 4.5 6.75C3.2595 6.75 2.25 7.7595 2.25 9Z" fill="#2B3F56"/>
-                                    </svg> Share
-                                        </a>
-                                    </div>
-                                    <p class="date">October 19, 2021</p>
-                                </footer>
-                            </div>
-                        </div>
+                <div class="row">
+
+                    <div class="image">
+                        <img src="assets/img/main.png" alt="">
                     </div>
+
+                    <div class="content">
+                        <h3>O que torna nosso café especial?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem. Quod nemo facilis cupiditate.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit amet enim quod veritatis, nihil voluptas culpa! Neque consectetur obcaecati sapiente?</p>
+                        <a href="#" class="btn">Ler mais</a>
+                    </div>
+
                 </div>
             </div>
         </section>
+        <!--===== Menu =====-->
+        <section class="menu" id="menu">
+            <div class="menu__container bd-grid">
+                <h1 class="heading">nosso<span> menu</span> </h1>
 
+                <div class="box-container">
+
+                    <div class="box">
+                        <img src="assets/img/menu-1.png" alt="">
+                        <h3>Saboroso e Saudável</h3>
+                        <div class="price">R$5.99 <span>R$9.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+
+                    <div class="box">
+                        <img src="assets/img/menu-2.png" alt="">
+                        <h3>Saboroso e Saudável</h3>
+                        <div class="price">R$5.99 <span>R$9.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+
+                    <div class="box">
+                        <img src="assets/img/menu-3.png" alt="">
+                        <h3>Saboroso e Saudável</h3>
+                        <div class="price">R$5.99 <span>R$9.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+
+                    <div class="box">
+                        <img src="assets/img/menu-4.png" alt="">
+                        <h3>Saboroso e Saudável</h3>
+                        <div class="price">R$5.99 <span>R$9.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+
+                    <div class="box">
+                        <img src="assets/img/menu-5.png" alt="">
+                        <h3>Saboroso e Saudável</h3>
+                        <div class="price">R$5.99 <span>R$9.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+
+                    <div class="box">
+                        <img src="assets/img/menu-6.png" alt="">
+                        <h3>Saboroso e Saudável</h3>
+                        <div class="price">R$5.99 <span>R$9.99</span></div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <!--===== Products =====-->
         <section class="products" id="products">
-            <div class="heading">
-                <h2>Our popular products</h2>
-            </div>
-            <!-- Container -->
-            <div class="products-container">
-                <div class="box">
-                    <img src="img/p1.png" alt="">
-                    <h3>Americano Pure</h3>
-                    <div class="content">
-                        <span>$25</span>
-                        <a href="#">Add to cart</a>
+            <div class="products__container bd-grid">
+                <h1 class="heading">nossos<span> produtos</span> </h1>
+
+                <div class="box-container">
+
+                    <div class="box">
+                        <h3>Café Fresco</h3>
+                        <div class="image">
+                            <img src="assets/img/p1.png" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="price">$15.99 <span>$R$9.99</span></div>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <img src="img/p2.png" alt="">
-                    <h3>Americano Pure</h3>
-                    <div class="content">
-                        <span>$25</span>
-                        <a href="#">Add to cart</a>
+
+                    <div class="box">
+                        <h3>Café Fresco</h3>
+                        <div class="image">
+                            <img src="assets/img/p2.png" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="price">$15.99 <span>$R$9.99</span></div>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <img src="img/p3.png" alt="">
-                    <h3>Americano Pure</h3>
-                    <div class="content">
-                        <span>$25</span>
-                        <a href="#">Add to cart</a>
+
+                    <div class="box">
+                        <h3>Café Fresco</h3>
+                        <div class="image">
+                            <img src="assets/img/p3.png" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="price">$15.99 <span>$R$9.99</span></div>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <img src="img/p4.png" alt="">
-                    <h3>Americano Pure</h3>
-                    <div class="content">
-                        <span>$25</span>
-                        <a href="#">Add to cart</a>
+
+                    <div class="box">
+                        <h3>Café Fresco</h3>
+                        <div class="image">
+                            <img src="assets/img/p4.png" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="price">$15.99 <span>$R$9.99</span></div>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <img src="img/p5.png" alt="">
-                    <h3>Americano Pure</h3>
-                    <div class="content">
-                        <span>$25</span>
-                        <a href="#">Add to cart</a>
+
+                    <div class="box">
+                        <h3>Café Fresco</h3>
+                        <div class="image">
+                            <img src="assets/img/p5.png" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="price">$15.99 <span>$R$9.99</span></div>
+                        </div>
                     </div>
-                </div>
-                <div class="box">
-                    <img src="img/p6.png" alt="">
-                    <h3>Americano Pure</h3>
-                    <div class="content">
-                        <span>$25</span>
-                        <a href="#">Add to cart</a>
+
+                    <div class="box">
+                        <h3>Café Fresco</h3>
+                        <div class="image">
+                            <img src="assets/img/p6.png" alt="">
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="price">$15.99 <span>$R$9.99</span></div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
-        <!--===== Customers =====-->
-        <section class="customers" id="customers">
-            <div class="heading">
-                <h2>Our customer's</h2>
-            </div>
-            <!-- Container -->
-            <div class="customers-container">
-                <div class="box">
-                    <div class="stars">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star-half'></i>
+        <!--===== Contact =====-->
+        <section class="contact" id="contact">
+            <div class="contact__container bd-grid">
+                <h1 class="heading">entre em<span> contrato</span></h1>
+
+                <div class="row">
+
+                    <div class="map">
+                        <iframe width="100%" src="https://maps.google.com/maps?q=bauru&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad accusantium voluptate officia totam obcaecati ducimus?</p>
-                    <h2>Yasin Arafat</h2>
-                    <img src="img/rev1.jpg" alt="">
-                </div>
-                <div class="box">
-                    <div class="stars">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star-half'></i>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad accusantium voluptate officia totam obcaecati ducimus?</p>
-                    <h2>Yasin Arafat</h2>
-                    <img src="img/rev2.jpg" alt="">
-                </div>
-                <div class="box">
-                    <div class="stars">
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star'></i>
-                        <i class='bx bxs-star-half'></i>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad accusantium voluptate officia totam obcaecati ducimus?</p>
-                    <h2>Yasin Arafat</h2>
-                    <img src="img/rev3.jpg" alt="">
+
+                    <form method="post" action="mailto:uthomaz7@gmail.com">
+                        <span class="fas fa-user"></span>
+                        <p>Nome</p>
+                        <div class="inputBox">
+                            <input type="text">
+                        </div>
+                        <span class="fas fa-envelope"></span>
+                        <p>Email</p>
+                        <div class="inputBox">
+                            <input type="email">
+                        </div>
+                        <span class="fas fa-comment-alt"></span>
+                        <p>Mensagem</p>
+                        <div class="inputBox">
+                            <input type="text">
+                        </div>
+                        <a href="#" class="btn">Enviar Mensagem</a>
+                    </form>
+
                 </div>
             </div>
         </section>
         <!--===== Footer =====-->
         <section class="footer">
-            <div class="footer-box">
-                <h2>Coffee Shop</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, facere.</p>
-                <div class="social">
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                    <a href="#"><i class='bx bxl-tiktok'></i></a>
+            <div class="about__container bd-grid">
+                <div class="footer-box">
+                    <h2>CoffeeShop</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, facere.</p>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bxl-discord'></i></a>
+                        <a href="#"><i class='bx bxl-twitch'></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-box">
-                <h3>Support</h3>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Help & Support</a></li>
-                <li><a href="#">Return Policy</a></li>
-                <li><a href="#">Terms Of Use</a></li>
-                <li><a href="#">Product</a></li>
-            </div>
-            <div class="footer-box">
-                <h3>View Guides</h3>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Blog Posts</a></li>
-                <li><a href="#">Our Branches</a></li>
-            </div>
-            <div class="footer-box">
-                <h3>Contact</h3>
-                <div class="contact">
-                    <span><i class='bx bxs-map'></i>250 New York City, USA 1001</span>
-                    <span><i class='bx bxs-phone'></i>+1 444 744 8444</span>
-                    <span><i class='bx bxs-envelope'></i>coffee@shop.com</span>
+                <div class="footer-box">
+                    <h3>Suporte</h3>
+                    <li><a href="#">Ajuda e Suporte</a></li>
+                    <li><a href="#">Política de devolução</a></li>
+                    <li><a href="#">Termos de uso</a></li>
+                </div>
+                <div class="footer-box">
+                    <h3>Contato</h3>
+                    <div class="contact">
+                        <a><i class='bx bxs-map'></i>
+                            R. José Santiago, Bauru - SP, 17056-100<br>
+                        </a>
+                        <a><i class='bx bxs-phone'></i>
+                            (14) 2109-6200<br>
+                        </a>
+                        <a><i class='bx bxs-envelope'></i>
+                            secretaria@fibbauru.br<br>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- ======== SCROLL UP ======== -->
+        <a href="#" class="scrollup show-scroll" id="scroll-up">
+            <div class="fas fa-arrow-up" id="scroll"></div>
+        </a>
     </main>
     <script>
         $(function() {
@@ -254,9 +414,20 @@
             });
         });
     </script>
+
+    <!-- ================ MAIN JS ================ -->
+
     <script src="assets/js/main.js"></script>
-    <script src='https://assets.codepen.io/2621168/atropos.min.js'></script>
+
     <script src="assets/js/script.js"></script>
+
+    <!-- ============= SCROLL REVEAL ============= -->
+
+    <script src="assets/js/scrollreveal.js"></script>
+
+    <!-- =============== SWIPER JS =============== -->
+
+    <script src="assets/js/swiper-bundle.js"></script>
 </body>
 
 </html>
