@@ -49,7 +49,7 @@ Uma página de uma loja fictícia usando HTML Css e JavaScript.
   </br>
 </p>
 
-## Menu:
+### Menu:
 
 <p align="justify">
   ✔️ Titulo
