@@ -1,5 +1,5 @@
 <h1>
-<a href="https://thomazgg.github.io/CoffeeShop">
+<a href="https://thomazgg.github.io/CoffeeShop/">
   <p align="center">
     CoffeShop ☕
   </p>
